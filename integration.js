@@ -1,5 +1,5 @@
-const API = "http://localhost:3001/api";
-const socket = io("http://localhost:3001");
+const API = "https://blackdzstorebackend.onrender.com/api";
+const socket = io("https://blackdzstorebackend.onrender.com");
 currentUser = null;
 
 /* LOGIN */
@@ -90,3 +90,4 @@ socket.on("message", msg => {
   div.textContent = msg.sender + ": " + msg.text;
   chatMessages.appendChild(div);
 });
+
